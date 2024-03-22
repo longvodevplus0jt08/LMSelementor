@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+    <!-- Custom Styles -->
+    <link href="css/stylecontact.css" rel="stylesheet">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+</head>
+<body>
+    <div class="background-color-custom">
+    <nav aria-label="breadcrumb" class="breadcrumb-bar animated">
+        <div class="container text-center text-md-left">
+            <h2>Contact - layout-3</h2>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Contact - layout-3</li>
+            </ol>
+        </div>
+    </nav>
+    <div class="map-div animated"> 
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.7295951587416!2d105.77411597583321!3d10.039158072358017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0881c0ee2fb81%3A0x1e6e7e8baa52057f!2zMTJDIMSQLiBUcuG6p24gSMawbmcgxJDhuqFvLCBBbiBDxrAsIE5pbmggS2nhu4F1LCBD4bqnbiBUaMahLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1711030938402!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 contact-info animated">
+                <h3 class="header-title">Contact Info</h3>
+                <p><i class="fas fa-map-marker-alt"></i> The Design Themes Inc, Mary Jane St, Sydney 2233 Australia.</p>
+                <p><i class="fas fa-phone"></i> +1 200 258 2145</p>
+                <p><i class="fas fa-print"></i> +1 100 458 2345</p>
+                <p><i class="fas fa-mobile-alt"></i> +91 12345 67890</p>
+                <p><i class="fas fa-envelope"></i> super@email.com</p>
+                <p><i class="fas fa-globe"></i> google.com</p>
+            </div>
+            <div class="col-md-6 contact-info animated ">
+                <h3 class="header-title ">Give Us A Message</h3>
+                <form>
+                    <div class="form-group animated">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                            </div>
+                            <input type="email" class="form-control" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                            </div>
+                            <input type="tel" class="form-control" placeholder="Phone">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="3" placeholder="Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary animated">SEND EMAIL</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Bootstrap JS and Dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.11.9/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom Scripts -->
+    <script src="js/contact.js"></script>
+</body>
+</html>
