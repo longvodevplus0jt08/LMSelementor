@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+  integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+  crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav id="sidebar">
+    <div id="dismiss">X</div>
+
+    <div class="sidebar-header"></div>
+    <div class="list-group">
+      <a href="#" class="list-group-item list-group-item-action lang" key="HOME" aria-current="true">
+        <span>></span>
+      </a>
+      <a href="#" class="list-group-item list-group-item-action lang" key="COURSES">
+        <span>></span>
+      </a>
+      <a href="#" class="list-group-item list-group-item-action lang" key="TEACHERS">
+        <span>></span>
+      </a>
+      <a href="#" class="list-group-item list-group-item-action lang" key="CONTACT">
+        <span>></span>
+      </a>
+      <a href="#" data-toggle="modal" data-target="#exampleModal" class="list-group-item list-group-item-action lang" >
+        <i class="bi bi-translate"></i>
+      </a>
+    </div>
+  </nav>
+
+  <div class="header-container">
+    <header>
+      <div class="logo-frame">
+        <img src="https://dtlmselementor.wpengine.com/wp-content/uploads/2023/11/lms-logo.png" alt="logo-lms"
+          class="logo-lms" />
+        <div onclick="show()" id="icon-inactive">
+          <i class="fa fa-bars" style="font-size: 24px"></i>
+        </div>
+        <div id="icon-active">
+          <img src="./img/logo-menu2.png" alt="logo-lms2" onclick="hide()" />
+        </div>
+
+        <ul class="menu-container nav justify-content-end">
+          <li class="nav-item dropdown" id="dropdown-home">
+            <div class="nav-link active lang dropdown" data-hover="dropdown">
+            <a class="nav-link active lang dropdown" data-hover="dropdown" href="#" key="HOME" id="dropdown-home">
+            </a>
+            <i class="bi bi-caret-down-fill"></i>
+          </div>
+            <ul class="dropdown-menu" id="dropdown-menu-home">
+              <li class="dropdown-item"><a href="#">4th level</a></li>
+              <li class="dropdown-item"><a href="#">4th level</a></li>
+              <li class="dropdown-item"><a href="#">4th level</a></li>
+          </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link lang" href="#" key="COURSES"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link lang" href="#" key="TEACHERS"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link lang" key="CONTACT"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="modal" data-target="#exampleModal"><i class="bi bi-translate"></i>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+                  <div class="dropdown">
+                    <a class="nav-link lang dropdown-toggle" id="dropdownMenu1" aria-haspopup="true" aria-expanded="false" key="CONTACT" data-toggle="dropdown"></a>
+
+                      <!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                      </button> -->
+                      <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                          <li class="dropdown-divider"></li>
+                          <li class="dropdown-submenu">
+                            <a  class="dropdown-item" tabindex="-1" href="#">Hover me for more options</a>
+                            <ul class="dropdown-menu">
+                              <li class="dropdown-item"><a tabindex="-1" href="#">Second level</a></li>
+                              <li class="dropdown-submenu">
+                                <a class="dropdown-item" href="#">Even More..</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item"><a href="#">3rd level</a></li>
+                                      <li class="dropdown-submenu"><a class="dropdown-item" href="#">another level</a>
+                                      <ul class="dropdown-menu">
+                                          <li class="dropdown-item"><a href="#">4th level</a></li>
+                                          <li class="dropdown-item"><a href="#">4th level</a></li>
+                                          <li class="dropdown-item"><a href="#">4th level</a></li>
+                                      </ul>
+                                    </li>
+                                      <li class="dropdown-item"><a href="#">3rd level</a></li>
+                                </ul>
+                              </li>
+                              <li class="dropdown-item"><a href="#">Second level</a></li>
+                              <li class="dropdown-item"><a href="#">Second level</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+              </div>
+        </li>
+
+
+        </ul>
+      </div>
+    </header>
+  </div>
+
+  <div class="overlay"></div>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Change Language</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <button type="button" data-dismiss="modal" class="translate btn btn-info btn-lg btn-block" id="en">English</button>
+          <button type="button"  data-dismiss="modal" class="translate btn btn-warning btn-lg btn-block" id="vi">Vietnamese</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Bootstrap CSS -->
+  <script>
+    function show() {
+      document.getElementById('icon-inactive').style.display = 'none';
+      document.getElementById('icon-active').style.display = 'block';
+    }
+    function hide() {
+      document.getElementById('icon-inactive').style.display = 'block';
+      document.getElementById('icon-active').style.display = 'none';
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap CSS -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <!-- Popper.JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+    integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+    integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"></script>
+  <!-- jQuery Custom Scroller CDN -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('#sidebar').mCustomScrollbar({
+        theme: 'minimal',
+      });
+
+      $('#dismiss, .overlay').on('click', function () {
+        $('#sidebar').removeClass('active');
+        $('.overlay').removeClass('active');
+        document.getElementById('icon-inactive').style.display = 'block';
+        document.getElementById('icon-active').style.display = 'none';
+      });
+
+      $('#icon-inactive').on('click', function () {
+        $('#sidebar').addClass('active');
+        $('.overlay').addClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+    });
+  </script>
+  <script src="./js/translate.js"></script>
+</body>
+
+</html>
