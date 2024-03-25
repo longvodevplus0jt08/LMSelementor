@@ -13,8 +13,8 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
-  integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
-  crossorigin="anonymous"></script>
+    integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -35,7 +35,7 @@
       <a href="#" class="list-group-item list-group-item-action lang" key="CONTACT">
         <span>></span>
       </a>
-      <a href="#" data-toggle="modal" data-target="#exampleModal" class="list-group-item list-group-item-action lang" >
+      <a href="#" data-toggle="modal" data-target="#exampleModal" class="list-group-item list-group-item-action lang">
         <i class="bi bi-translate"></i>
       </a>
     </div>
@@ -55,67 +55,121 @@
 
         <ul class="menu-container nav justify-content-end">
           <li class="nav-item dropdown" id="dropdown-home">
-            <div class="nav-link active lang dropdown" data-hover="dropdown">
-            <a class="nav-link active lang dropdown" data-hover="dropdown" href="#" key="HOME" id="dropdown-home">
+            <a class="nav-link lang dropdown active" data-hover="dropdown" href="#" key="HOME" id="dropdown-home">
             </a>
-            <i class="bi bi-caret-down-fill"></i>
-          </div>
+            <i class="bi bi-caret-down-fill" id="icon-fill-down"></i>
             <ul class="dropdown-menu" id="dropdown-menu-home">
-              <li class="dropdown-item"><a href="#">4th level</a></li>
-              <li class="dropdown-item"><a href="#">4th level</a></li>
-              <li class="dropdown-item"><a href="#">4th level</a></li>
-          </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link lang" href="#" key="COURSES"></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link lang" href="#" key="TEACHERS"></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link lang" key="CONTACT"></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="modal" data-target="#exampleModal"><i class="bi bi-translate"></i>
-            </a>
+              <li class="dropdown-submenu">
+                <a class="dropdown-item" tabindex="-1" href="#">Home II</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item"><a tabindex="-1" href="#">Second level</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-item"><a href="#">Home – Landing Page</a></li>
+              <li class="dropdown-item"><a href="#">Home – Subscription</a></li>
+              <li class="dropdown-item"><a href="#">Home – Course-Search</a></li>
+              <li class="dropdown-item"><a href="#">Zoom Meeting</a></li>
+              <li class="dropdown-item"><a href="#">Home – kids</a></li>
+              <li class="dropdown-item"><a href="#">Points System</a></li>
+            </ul>
           </li>
           <li class="nav-item dropdown">
-                  <div class="dropdown">
-                    <a class="nav-link lang dropdown-toggle" id="dropdownMenu1" aria-haspopup="true" aria-expanded="false" key="CONTACT" data-toggle="dropdown"></a>
+            <a class="nav-link lang" href="#" key="COURSES"></a>
+            <i class="bi bi-caret-down-fill" id="icon-fill-down"></i>
+            <ul class="dropdown-menu" id="dropdown-menu-home">
+              <li class="dropdown-item"><a href="#">Courses-Template</a></li>
+              <li class="dropdown-item"><a href="#">Lessons</a></li>
+              <li class="dropdown-item"><a href="#">Search-Course</a></li>
+              <li class="dropdown-item"><a href="#">Membership</a></li>
+              <li class="dropdown-submenu">
+                <a class="dropdown-item" tabindex="-1" href="#">Courses Detail</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item"><a tabindex="-1" href="#">Detail Type – 1</a></li>
+                  <li class="dropdown-item"><a tabindex="-1" href="#">Detail Type – 2</a></li>
+                  <li class="dropdown-item"><a tabindex="-1" href="#">Detail Type – 3</a></li>
+                  <li class="dropdown-item"><a tabindex="-1" href="#">Detail Type – 4</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link lang" href="#" key="PAGES"></a>
+            <i class="bi bi-caret-down-fill" id="icon-fill-down"></i>
+            <ul class="dropdown-menu" id="dropdown-menu-home">
+              <li class="dropdown-submenu">
+                <a class="dropdown-item" tabindex="-1" href="#">BuddyPress</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item"><a tabindex="-1" href="#">Members</a></li>
+                  <li class="dropdown-item"><a tabindex="-1" href="#">Site-Wide Activity</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu">
+                <a class="dropdown-item" tabindex="-1" href="#">Event</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item"><a tabindex="-1" href="#">Event Listing</a></li>
+                  <li class="dropdown-item"><a tabindex="-1" href="#">Events Month</a></li>
+                  <li class="dropdown-item"><a tabindex="-1" href="#">Events Day</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu">
+                <a class="dropdown-item" tabindex="-1" href="#">Headers</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item"><a tabindex="-1" href="#">Header-1</a></li>
+                  <li class="dropdown-item"><a tabindex="-1" href="#">Header-2</a></li>
+                  <li class="dropdown-item"><a tabindex="-1" href="#">Header-3</a></li>
+                  <li class="dropdown-item"><a tabindex="-1" href="#">Header-4</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-item"><a href="#">Side-Navigation</a></li>
+              <li class="dropdown-item"><a href="#">About</a></li>
+              <li class="dropdown-item"><a href="#">Teachers</a></li>
+              <li class="dropdown-item"><a href="#">Teachers Profile</a></li>
 
-                      <!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                      </button> -->
-                      <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
-                          <li class="dropdown-divider"></li>
-                          <li class="dropdown-submenu">
-                            <a  class="dropdown-item" tabindex="-1" href="#">Hover me for more options</a>
-                            <ul class="dropdown-menu">
-                              <li class="dropdown-item"><a tabindex="-1" href="#">Second level</a></li>
-                              <li class="dropdown-submenu">
-                                <a class="dropdown-item" href="#">Even More..</a>
-                                <ul class="dropdown-menu">
-                                    <li class="dropdown-item"><a href="#">3rd level</a></li>
-                                      <li class="dropdown-submenu"><a class="dropdown-item" href="#">another level</a>
-                                      <ul class="dropdown-menu">
-                                          <li class="dropdown-item"><a href="#">4th level</a></li>
-                                          <li class="dropdown-item"><a href="#">4th level</a></li>
-                                          <li class="dropdown-item"><a href="#">4th level</a></li>
-                                      </ul>
-                                    </li>
-                                      <li class="dropdown-item"><a href="#">3rd level</a></li>
-                                </ul>
-                              </li>
-                              <li class="dropdown-item"><a href="#">Second level</a></li>
-                              <li class="dropdown-item"><a href="#">Second level</a></li>
-                            </ul>
-                          </li>
-                        </ul>
-              </div>
-        </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link lang" href="#" key="BLOG"></a>
+            <i class="bi bi-caret-down-fill" id="icon-fill-down"></i>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link lang" href="#" key="GALLERY"></a>
+            <i class="bi bi-caret-down-fill" id="icon-fill-down"></i>
+          </li>
 
+          <li class="nav-item dropdown">
+            <a class="nav-link lang" href="#" key="SHOP"></a>
+            <i class="bi bi-caret-down-fill" id="icon-fill-down"></i>
 
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link lang" key="CONTACT"></a>
+            <i class="bi bi-caret-down-fill" id="icon-fill-down"></i>
+            <ul class="dropdown-menu" id="dropdown-menu-home">
+              <li class="dropdown-item"><a href="#">Contact – layout-2</a></li>
+              <li class="dropdown-item"><a href="#">Contact – layout-3</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <div class="nav-link">
+              <ul class="custom-login">
+                <li><a href="#" title="Login" class="login-link" onclick="return false"><i
+                      class="fa fa-user"></i>Login</a></li><span> | </span>
+                <li><a href="https://dtlmselementor.wpengine.com/registration/" title="Register"></i>Register</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <span class="nav-link shop-icon">
+              <i class="bi bi-cart-fill"></i>
+            </span>
+          </li>
+          <li class="nav-item justify-content-center">
+            <a class="nav-link" data-toggle="modal" data-target="#exampleModal"><i class="bi bi-translate translate-icon"></i>
+            </a>
+          </li>
         </ul>
+        
       </div>
     </header>
   </div>
@@ -132,8 +186,10 @@
           </button>
         </div>
         <div class="modal-body">
-          <button type="button" data-dismiss="modal" class="translate btn btn-info btn-lg btn-block" id="en">English</button>
-          <button type="button"  data-dismiss="modal" class="translate btn btn-warning btn-lg btn-block" id="vi">Vietnamese</button>
+          <button type="button" data-dismiss="modal" class="translate btn btn-info btn-lg btn-block"
+            id="en">English</button>
+          <button type="button" data-dismiss="modal" class="translate btn btn-warning btn-lg btn-block"
+            id="vi">Vietnamese</button>
         </div>
       </div>
     </div>

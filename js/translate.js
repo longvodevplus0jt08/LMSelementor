@@ -4,12 +4,21 @@ var arrLang = {
     TEACHERS: 'TEACHERS',
     CONTACT: 'CONTACT',
     COURSES: 'COURSES',
+    PAGES: 'PAGES',
+    BLOG: 'BLOG',
+    GALLERY: 'GALLERY',
+    SHOP: 'SHOP'
   },
   vi: {
     HOME: 'TRANG CHỦ',
     TEACHERS: 'GIẢNG VIÊN',
     CONTACT: 'LIÊN HỆ',
     COURSES: 'KHÓA HỌC',
+    PAGES: 'TRANG',
+    BLOG: 'NHẬT KÝ',
+    GALLERY: 'THƯ VIỆN',
+    SHOP: 'CỬA HÀNG'
+
   },
 };
 
