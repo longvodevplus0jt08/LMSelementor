@@ -1,0 +1,23 @@
+.ourprocess-title {
+  display: flex;
+  justify-content: center;
+}
+.ourprocess-step {
+  display: block;
+  justify-content: center;
+  padding: 20px 5%;
+}
+.step-title {
+  display: block;
+  justify-content: flex-end;
+  width: 35%;
+}
+.step-section {
+  display: inline-flex;
+  padding: 0px 0px 20px;
+}
+.img-icon {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+}
