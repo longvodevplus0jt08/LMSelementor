@@ -99,7 +99,9 @@
 @media (max-width: 768px) {
   /* Adjust for larger screens */
   .search-form {
-    width: 70%;
+  }
+  .row-container {
+    width: auto;
   }
   .form-control {
     width: 80%;
