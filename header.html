@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+    integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav id="sidebar">
+    <div id="dismiss">X</div>
+    <div class="sidebar-header"></div>
+    <div class="list-group">
+      <a href="#" class="list-group-item list-group-item-action lang list-group-subitem" key="HOME" aria-current="true"
+        onclick="showSidebar(this)" id="isCollapse">
+      </a>
+      <a href="#" class="list-group-item list-group-item-action lang list-group-subitem" key="COURSES"
+        onclick="showSidebar(this)">
+      </a>
+      <a href="#" class="list-group-item list-group-item-action lang list-group-subitem" key="PAGES"
+        onclick="showSidebar(this)">
+      </a>
+      <a href="#" class="list-group-item list-group-item-action lang" key="BLOG">
+      </a>
+      <a href="#" class="list-group-item list-group-item-action lang" key="GALLERY">
+      </a>
+      <a href="#" class="list-group-item list-group-item-action lang" key="SHOP">
+      </a>
+      <a href="#" class="list-group-item list-group-item-action lang list-group-subitem" key="CONTACT"
+        onclick="showSidebar(this)">
+      </a>
+      <a href="#" data-toggle="modal" data-target="#exampleModal" class="list-group-item list-group-item-action lang">
+        <i class="bi bi-translate"></i>
+      </a>
+    </div>
+  </nav>
+
+  <nav id="sidebar-2">
+    <div class="sidebar-header">
+      <div id="back"></div>
+      <div id="dismiss">X</div>
+    </div>
+
+    <div class="list-group" id="list-sidebar">
+    </div>
+  </nav>
+
+  <div class="header-container">
+    <header>
+      <div class="logo-frame">
+        <img src="https://dtlmselementor.wpengine.com/wp-content/uploads/2023/11/lms-logo.png" alt="logo-lms"
+          class="logo-lms" />
+        <ul class="nav justify-content-end">
+          <div class="menu-container nav justify-content-end">
+            <li class="nav-item dropdown" id="dropdown-home">
+              <a class="nav-link lang dropdown active" data-hover="dropdown" href="#" key="HOME" id="dropdown-home">
+              </a>
+              <i class="bi bi-caret-down-fill" id="icon-fill-down"></i>
+              <ul class="dropdown-menu" id="dropdown-menu-home">
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item lang" tabindex="-1" href="#" key="HOME_II"></a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-item lang"><a tabindex="-1" href="#" key="SECOND_LEVEL"></a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-item lang" key="HOME_LANDING_PAGE"><a href="#"></a></li>
+                <li class="dropdown-item lang" key="HOME_SUBSCRIPTION"><a href="#"></a></li>
+                <li class="dropdown-item lang" key="HOME_COURSE_SEARCH"><a href="#"></a></li>
+                <li class="dropdown-item lang" key="ZOOM_MEETING"><a href="#"></a></li>
+                <li class="dropdown-item lang" key="HOME_KIDS"><a href="#"></a></li>
+                <li class="dropdown-item lang" key="POINTS_SYSTEM"><a href="#"></a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link lang" href="#" key="COURSES"></a>
+              <i class="bi bi-caret-down-fill" id="icon-fill-down"></i>
+              <ul class="dropdown-menu" id="dropdown-menu-home">
+                <li class="dropdown-item lang" key="COURSES_TEMPLATE"><a href="#"></a></li>
+                <li class="dropdown-item lang" key="LESSONS"><a href="#"></a></li>
+                <li class="dropdown-item lang" key="SEARCH_COURSE"><a href="#"></a></li>
+                <li class="dropdown-item lang" key="MEMBERSHIP"><a href="#"></a></li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item lang" key="COURSES_DETAIL" tabindex="-1" href="#"></a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-item lang" key="COURSES_TYPE_1"><a tabindex="-1" href="#"></a></li>
+                    <li class="dropdown-item lang" key="COURSES_TYPE_2"><a tabindex="-1" href="#"></a></li>
+                    <li class="dropdown-item lang" key="COURSES_TYPE_3"><a tabindex="-1" href="#"></a></li>
+                    <li class="dropdown-item lang" key="COURSES_TYPE_4"><a tabindex="-1" href="#"></a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link lang" href="#" key="PAGES"></a>
+              <i class="bi bi-caret-down-fill" id="icon-fill-down"></i>
+              <ul class="dropdown-menu" id="dropdown-menu-home">
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item lang" key="BUDDYPRESS" tabindex="-1" href="#"></a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-item lang" key="MEMBERS"><a tabindex="-1" href="#"></a></li>
+                    <li class="dropdown-item lang" key="SITE_WIDE_ACTIVITY"><a tabindex="-1" href="#"></a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item lang" key="EVENT" tabindex="-1" href="#"></a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-item lang" key="EVENT_LISTING"><a tabindex="-1" href="#"></a></li>
+                    <li class="dropdown-item lang" key="EVENTS_MONTH"><a tabindex="-1" href="#"></a></li>
+                    <li class="dropdown-item lang" key="EVENTS_DAY"><a tabindex="-1" href="#"></a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item lang" key="HEADERS" tabindex="-1" href="#"></a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-item lang" key="HEADERS_1"><a tabindex="-1" href="#"></a></li>
+                    <li class="dropdown-item lang" key="HEADERS_2"><a tabindex="-1" href="#"></a></li>
+                    <li class="dropdown-item lang" key="HEADERS_3"><a tabindex="-1" href="#"></a></li>
+                    <li class="dropdown-item lang" key="HEADERS_4"><a tabindex="-1" href="#"></a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-item lang" key="SIDE_NAVIGATION"><a href="#"></a></li>
+                <li class="dropdown-item lang" key="ABOUT"><a href="#"></a></li>
+                <li class="dropdown-item lang" key="TEACHER"><a href="#"></a></li>
+                <li class="dropdown-item lang" key="TEACHERS_PROFILE"><a href="#"></a></li>
+
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link lang" href="#" key="BLOG"></a>
+              <i class="bi bi-caret-down-fill" id="icon-fill-down"></i>
+              <ul class="dropdown-menu" id="dropdown-blog-container">
+                <li class="dropdown-item" id="dropdown-blog">
+                  <img src="./img/blog.png" alt="blog" />
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link lang" href="#" key="GALLERY"></a>
+              <i class="bi bi-caret-down-fill" id="icon-fill-down"></i>
+              <ul class="dropdown-menu" id="dropdown-gallery-container">
+                <li class="dropdown-item" id="dropdown-blog">
+                  <img src="./img/gallery.png" alt="blog" />
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link lang" href="#" key="SHOP"></a>
+              <i class="bi bi-caret-down-fill" id="icon-fill-down"></i>
+              <ul class="dropdown-menu" id="dropdown-shop-container">
+                <li class="dropdown-item" id="dropdown-blog">
+                  <img src="./img/shop.png" alt="blog" />
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link lang" key="CONTACT"></a>
+              <i class="bi bi-caret-down-fill" id="icon-fill-down"></i>
+              <ul class="dropdown-menu" id="dropdown-menu-home">
+                <li class="dropdown-item lang" key="CONTACT_LAYOUT_2"><a href="#"></a></li>
+                <li class="dropdown-item lang" key="CONTACT_LAYOUT_3" onclick="navigate(`contact-page.html`)"><a
+                    href="contact-page.html"></a>
+                </li>
+              </ul>
+            </li>
+          </div>
+          <li class="nav-item dropdown menu-icon">
+            <div onclick="show()" id="icon-inactive">
+              <i class="fa fa-bars" style="font-size: 24px"></i>
+            </div>
+            <div id="icon-active">
+              <img src="./img/logo-menu2.png" alt="logo-lms2" onclick="hide()" />
+            </div>
+          </li>
+          <div class="nav justify-content-end auth-container">
+            <li class="nav-item">
+              <div class="nav-link">
+                <ul class="custom-login">
+                  <li><a href="#" title="Login" class="login-link" onclick="return false"><i
+                        class="fa fa-user"></i>Login</a></li><span> | </span>
+                  <li><a href="https://dtlmselementor.wpengine.com/registration/" title="Register"></i>Register</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <span class="nav-link shop-icon">
+                <i class="bi bi-cart-fill"></i>
+              </span>
+            </li>
+            <li class="nav-item dropdown translate-icon">
+              <a class="nav-link" data-toggle="modal" data-target="#exampleModal"><i
+                  class="bi bi-translate translate-icon"></i>
+              </a>
+            </li>
+          </div>
+        </ul>
+
+      </div>
+    </header>
+  </div>
+
+  <div class="overlay"></div>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Change Language</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <button type="button" data-dismiss="modal" class="translate btn btn-info btn-lg btn-block"
+            id="en">English</button>
+          <button type="button" data-dismiss="modal" class="translate btn btn-warning btn-lg btn-block"
+            id="vi">Vietnamese</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Bootstrap CSS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap CSS -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <!-- Popper.JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+    integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+    integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js">
+    </script>
+  <!-- jQuery Custom Scroller CDN -->
+
+
+
+  <!-- <script>
+    function show() {
+      document.getElementById('icon-inactive').style.display = 'none';
+      document.getElementById('icon-active').style.display = 'block';
+    }
+    function hide() {
+      document.getElementById('icon-inactive').style.display = 'block';
+      document.getElementById('icon-active').style.display = 'none';
+    }
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('#sidebar').mCustomScrollbar({
+        theme: 'minimal',
+      });
+
+      $('#dismiss, .overlay').on('click', function () {
+        $('#sidebar').removeClass('active');
+        $('.overlay').removeClass('active');
+        document.getElementById('icon-inactive').style.display = 'block';
+        document.getElementById('icon-active').style.display = 'none';
+      });
+
+      $('#icon-inactive').on('click', function () {
+        $('#sidebar').addClass('active');
+        $('.overlay').addClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+    });
+
+    $(document).ready(function () {
+      $('#sidebar-2').mCustomScrollbar({
+        theme: 'minimal',
+      });
+
+      $('#dismiss, .overlay').on('click', function () {
+        $('#sidebar-2').removeClass('active');
+        $('.overlay').removeClass('active');
+        document.getElementById('icon-inactive').style.display = 'block';
+        document.getElementById('icon-active').style.display = 'none';
+      });
+
+      // $('#isCollapse').on('click', function () {
+      //   $('#sidebar-2').addClass('active');
+      //   $('.overlay').addClass('active');
+      //   $('.collapse.in').toggleClass('in');
+      //   $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      // });
+
+      $('#back').on('click', function () {
+        $('#sidebar-2').removeClass('active');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+    });
+  </script>
+  <script>
+    function showSidebar(element) {
+      const tbody = document.querySelector('#list-sidebar');
+      let index = 1;
+      var key = element.getAttribute("key");
+      if (key) {
+        let data = {
+          HOME: ["HOME_II", "HOME_LANDING_PAGE", "HOME_SUBSCRIPTION", "HOME_COURSE_SEARCH", "ZOOM_MEETING", "HOME_KIDS", "POINTS_SYSTEM"],
+          COURSES: ["COURSES_TEMPLATE", "LESSONS", "SEARCH_COURSE", "MEMBERSHIP", "COURSES_DETAIL"],
+          PAGES: ["BUDDYPRESS", "EVENT", "HEADERS", "SIDE_NAVIGATION", "ABOUT", "TEACHER", "TEACHERS_PROFILE"],
+          CONTACT: ["CONTACT_LAYOUT_2", "CONTACT_LAYOUT_2"]
+        };
+        while (tbody.firstChild) {
+          tbody.removeChild(tbody.firstChild);
+        }
+        data[key].forEach(function (product) {
+          const row = document.createElement('div');
+          row.innerHTML = `<a href="#" class="list-group-item list-group-item-action lang" key=${product} aria-current="true"></a>`;
+          tbody.appendChild(row);
+          index++;
+        })
+        $(document).ready(function () {
+          // The default language is English
+          var lang = localStorage.getItem('lang');;
+          $('.lang').each(function (index, element) {
+            $(this).text(arrLang[lang][$(this).attr('key')]);
+          });
+        });
+        $('#sidebar-2').addClass('active');
+        $('.overlay').addClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      }
+    }
+  </script> -->
+  <script src="/js/translate.js"></script>
+  <script src="/js/header.js"></script>
+</body>
+
+</html>

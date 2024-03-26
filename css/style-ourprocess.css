@@ -3,152 +3,184 @@
   padding-bottom: 10%;
   overflow: hidden;
 }
+
 .ourprocess-title {
   display: grid;
   place-items: center;
   padding-bottom: 5%;
 }
+
 .ourprocess-title {
   position: relative;
 }
+
 .ourprocess-title h1 {
   display: inline-block;
 }
+
 .underline {
   width: 40px;
   height: 4px;
   background-color: #838c48;
 }
+
 .content-op-container {
   padding-top: 0%;
 }
+
 .content-op-container1 {
   padding-top: 0;
 }
+
 .ourprocess-step1 {
   display: flex;
   justify-content: start;
   padding-left: 15%;
   padding-top: 0;
 }
+
 .step-title {
   display: block;
   justify-content: flex-end;
   margin-bottom: 40px;
 }
+
 .op-h2 {
   text-align: end;
   color: #da8559;
 }
+
 .op-h4 {
   text-align: end;
   color: #5d666f;
 }
+
 .step-section {
   display: inline-flex;
   padding: 0px 0px 20px;
 }
+
 .img-icon {
   width: 35px;
   height: 35px;
   margin-left: 10px;
 }
+
 .step-p {
   text-align: end;
   color: #808080;
   font-size: 14px;
   font-family: sans-serif;
 }
+
 .ourprocess-step2 {
   display: flex;
   justify-content: end;
   padding-right: 17%;
 }
+
 .step-p2 {
   text-align: end;
   color: #808080;
   font-size: 14px;
   font-family: sans-serif;
 }
+
 .op-h21 {
   text-align: start;
   color: #da8559;
 }
+
 .op-h41 {
   text-align: start;
   color: #5d666f;
 }
+
 .step-section1 {
   display: inline-flex;
   padding: 20px 0px 0px;
 }
+
 @media (max-width: 580px) {
-  ourprocess-container {
+  .ourprocess-container {
     width: 100%;
   }
+
   .img-row {
     display: none;
   }
 }
+
 @media (min-width: 600px) and (max-width: 1500px) {
   .ourprocess-container {
     background-color: #fdf6ea;
     padding-bottom: 10%;
     overflow: hidden;
   }
+
   .ourprocess-step1 {
     display: flex;
     justify-content: start;
     padding-left: 0;
     width: 50%;
   }
+
   .ourprocess-step2 {
     display: flex;
     justify-content: end;
     padding: 0;
   }
+
   .content-op-container {
     width: 50%;
   }
 }
+
 @media (min-width: 1070px) and (max-width: 1350px) {
   .ourprocess-container {
     background-color: #fdf6ea;
     padding-bottom: 10%;
     overflow: hidden;
   }
+
   .ourprocess-step1 {
     display: flex;
     justify-content: start;
     padding-left: 10%;
     width: 50%;
   }
+
   .ourprocess-step2 {
     display: flex;
     justify-content: end;
     padding: 0;
   }
+
   .content-op-container {
     width: 50%;
   }
 }
+
 @media (min-width: 1351px) and (max-width: 1500px) {
   .ourprocess-container {
     background-color: #fdf6ea;
     padding-bottom: 10%;
     overflow: hidden;
   }
+
   .ourprocess-step1 {
     display: flex;
     justify-content: start;
     padding-left: 17%;
     width: 50%;
   }
+
   .ourprocess-step2 {
     display: flex;
     justify-content: end;
     padding: 0;
   }
+
   .content-op-container {
     width: 50%;
   }
