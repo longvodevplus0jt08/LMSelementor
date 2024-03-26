@@ -1,0 +1,161 @@
+.image-container {
+    display: flex;
+}
+
+.image-wrapper {
+    display: flex;
+    align-items: center; 
+    margin-right: 40px; 
+	width: 100%;
+}
+
+.image-wrapper:last-child {
+    margin-right: 0; 
+}
+
+.image-wrapper img {
+    width: 50%;
+    height: auto;
+    margin-right: 10px; 
+}
+.get-in-touch {
+    background-color: #e59f59;
+    text-align: center;
+    padding: 50px 0;
+}
+.upcoming h2 {
+    position: relative; 
+    padding-bottom: 10px; 
+}
+
+.upcoming h2:after {
+    content: ""; 
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    height: 4px; 
+    background-color: #838c48; 
+    width: 15%; 
+}
+.get-in-touch p {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+#subscription-form input {
+    margin-bottom: 20px;
+    max-width: 300px;
+}
+.button-container {
+    position: absolute;
+    top: 1px;
+    right: 400px;
+}
+.upcoming{
+    background: #F5E9D4;
+}
+.btn-primary {
+    background-color: #008cba;
+    border: none;
+}
+.image-description {
+    flex: 1; 
+}
+.grid{
+    display: grid; 
+    grid-template-columns: repeat(2 , 1fr);
+}
+
+
+.get-in-touch::before {
+    content: ""; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/img/upcoming/anhnen.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    opacity: 1; 
+    z-index: -1; 
+}
+
+.get-in-touch {
+    background-color: rgba(235, 122, 17, 0.6); 
+    text-align: center; 
+}
+.get-in-touch {
+    position: relative; 
+    padding: 50px 0; /* Điều chỉnh lề cho phần "GET IN TOUCH WITH US" */
+}
+
+@media (max-width: 768px) {
+   
+	.image-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+    .btn-upcoming {
+        position: static;
+        margin-top: 60px;
+		display: flex;
+		justify-content: center;
+		
+    }
+    .upcoming {
+        position: relative; 
+        padding-bottom: 10px; 
+    }
+    
+    .upcoming h2:after {
+        content: ""; 
+        position: absolute; 
+        left: 0; 
+        right: 0; 
+        bottom: 10px; 
+        height: 4px; 
+        background-color: #838c48; 
+        width: 15%; 
+    }
+	.btn-upcoming .btn {
+		margin: 0 5px; 
+        text-align: center;
+        
+	}
+	.grid{
+        display: grid; 
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .image-wrapper img {
+        width: 100%; 
+        height: auto;
+        margin: 0 auto; 
+        display: block; 
+    }
+
+}
+@keyframes fadeInUpFromLeft {
+    0% {
+        opacity: 0;
+        transform: translate(-100%, 100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+body * {
+    animation: fadeInUpFromLeft 1s ease-out forwards;
+}
+.image-wrapper, .upcoming h2, .get-in-touch h2 {
+    animation: fadeInUpFromLeft 1s ease-out forwards;
+}
+
+
+
+
