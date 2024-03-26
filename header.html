@@ -22,7 +22,7 @@
     <div id="dismiss">X</div>
     <div class="sidebar-header"></div>
     <div class="list-group">
-      <a href="#" class="list-group-item list-group-item-action lang list-group-subitem" key="HOME" aria-current="true"
+      <a href="./index.html" onclick="navigate(`index.html`)" class="list-group-item list-group-item-action lang list-group-subitem" key="HOME" aria-current="true"
         onclick="showSidebar(this)" id="isCollapse">
       </a>
       <a href="#" class="list-group-item list-group-item-action lang list-group-subitem" key="COURSES"
@@ -86,7 +86,7 @@
               <a class="nav-link lang" href="#" key="COURSES"></a>
               <i class="bi bi-caret-down-fill" id="icon-fill-down"></i>
               <ul class="dropdown-menu" id="dropdown-menu-home">
-                <li class="dropdown-item lang" key="COURSES_TEMPLATE"><a href="#"></a></li>
+                <li class="dropdown-item lang" key="COURSES_TEMPLATE"  onclick="navigate(`course-template.html`)"  ><a href="course-template.html"></a></li>
                 <li class="dropdown-item lang" key="LESSONS"><a href="#"></a></li>
                 <li class="dropdown-item lang" key="SEARCH_COURSE"><a href="#"></a></li>
                 <li class="dropdown-item lang" key="MEMBERSHIP"><a href="#"></a></li>
