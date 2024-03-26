@@ -89,7 +89,7 @@
 }
 .get-in-touch {
     position: relative; 
-    padding: 50px 0; 
+    padding: 50px 0; /* Điều chỉnh lề cho phần "GET IN TOUCH WITH US" */
 }
 
 @media (max-width: 768px) {
@@ -149,7 +149,12 @@
         transform: translate(0, 0);
     }
 }
-
+body * {
+    animation: fadeInUpFromLeft 1s ease-out forwards;
+}
+.image-wrapper, .upcoming h2, .get-in-touch h2 {
+    animation: fadeInUpFromLeft 1s ease-out forwards;
+}
 
 
 
