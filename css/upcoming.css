@@ -149,12 +149,12 @@
         transform: translate(0, 0);
     }
 }
-body * {
+/* body * {
     animation: fadeInUpFromLeft 1s ease-out forwards;
 }
 .image-wrapper, .upcoming h2, .get-in-touch h2 {
     animation: fadeInUpFromLeft 1s ease-out forwards;
-}
+} */
 
 
 
