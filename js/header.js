@@ -89,7 +89,7 @@ function showSidebar(element) {
 
 
 
-
 function navigate(element) {
-    window.location.href = `${window.location.origin}/${element}`
+    console.log(element);
+    window.location.href = `${window.location.hostname === 'localhost' ? "http://localhost:5500": ""}/${element}`
 }

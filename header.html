@@ -64,14 +64,14 @@
         <ul class="nav justify-content-end">
           <div class="menu-container nav justify-content-end">
             <li class="nav-item dropdown" id="dropdown-home">
-              <a class="nav-link lang dropdown active" data-hover="dropdown" href="#" key="HOME" id="dropdown-home">
+              <a class="nav-link lang dropdown" data-hover="dropdown" href="#" key="HOME" id="dropdown-home" onclick="navigate(`index.html`)">
               </a>
               <i class="bi bi-caret-down-fill" id="icon-fill-down"></i>
               <ul class="dropdown-menu" id="dropdown-menu-home">
                 <li class="dropdown-submenu">
                   <a class="dropdown-item lang" tabindex="-1" href="#" key="HOME_II"></a>
                   <ul class="dropdown-menu">
-                    <li class="dropdown-item lang"><a tabindex="-1" href="#" key="SECOND_LEVEL"></a></li>
+                    <li class="dropdown-item lang" key="SECOND_LEVEL"><a tabindex="-1" href="#" key="SECOND_LEVEL"></a></li>
                   </ul>
                 </li>
                 <li class="dropdown-item lang" key="HOME_LANDING_PAGE"><a href="#"></a></li>
@@ -83,10 +83,10 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link lang" href="#" key="COURSES"></a>
+              <a class="nav-link lang" href="courses-template.html" key="COURSES" ></a>
               <i class="bi bi-caret-down-fill" id="icon-fill-down"></i>
               <ul class="dropdown-menu" id="dropdown-menu-home">
-                <li class="dropdown-item lang" key="COURSES_TEMPLATE"><a href="#"></a></li>
+                <li class="dropdown-item lang" key="COURSES_TEMPLATE" onclick="navigate(`courses-template.html`)"><a href="courses-template.html"></a></li>
                 <li class="dropdown-item lang" key="LESSONS"><a href="#"></a></li>
                 <li class="dropdown-item lang" key="SEARCH_COURSE"><a href="#"></a></li>
                 <li class="dropdown-item lang" key="MEMBERSHIP"><a href="#"></a></li>
@@ -131,7 +131,7 @@
                 </li>
                 <li class="dropdown-item lang" key="SIDE_NAVIGATION"><a href="#"></a></li>
                 <li class="dropdown-item lang" key="ABOUT"><a href="#"></a></li>
-                <li class="dropdown-item lang" key="TEACHER"><a href="#"></a></li>
+                <li class="dropdown-item lang" key="TEACHER" onclick="navigate(`teacher.html`)"><a href="#"></a></li>
                 <li class="dropdown-item lang" key="TEACHERS_PROFILE"><a href="#"></a></li>
 
               </ul>
@@ -164,10 +164,10 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link lang" key="CONTACT"></a>
+              <a class="nav-link lang active" key="CONTACT"></a>
               <i class="bi bi-caret-down-fill" id="icon-fill-down"></i>
               <ul class="dropdown-menu" id="dropdown-menu-home">
-                <li class="dropdown-item lang" key="CONTACT_LAYOUT_2"><a href="#"></a></li>
+                <li class="dropdown-item lang" key="CONTACT_LAYOUT_2" onclick="navigate(`contact-page.html`)"><a href="#"></a></li>
                 <li class="dropdown-item lang" key="CONTACT_LAYOUT_3" onclick="navigate(`contact-page.html`)"><a
                     href="contact-page.html"></a>
                 </li>

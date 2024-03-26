@@ -9,7 +9,7 @@ var arrLang = {
     GALLERY: 'GALLERY',
     SHOP: 'SHOP',
     HOME_II: 'Home II',
-    SECOND_LEVEL: 'SECOND LEVEL',
+    SECOND_LEVEL: 'Second Level',
     HOME_LANDING_PAGE: 'Home – Landing Page',
     HOME_SUBSCRIPTION: 'Home – Subscription',
     HOME_COURSE_SEARCH: 'Home – Course-Search',
